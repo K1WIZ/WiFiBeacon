@@ -107,7 +107,7 @@ void PorkRoll() {
   sendBeacon("_House of LANister");
   sendBeacon("_GET OFF MY WIFI");
   sendBeacon("_Untrusted Network");
-  sendBeacon("_BOMB DETONATOR");
+  sendBeacon("_BOMB DETONATOR");     //    COMMENT OR REMOVE THIS ONE IF USING NEAR AIRPORTS!  DON'T BE A DICKHEAD!
   sendBeacon("_DEA UNIT 9");
   sendBeacon("_VOYAGER 2");
   sendBeacon("_STARSHIP ENTERPRISE");
