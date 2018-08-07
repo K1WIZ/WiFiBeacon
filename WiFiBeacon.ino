@@ -118,6 +118,7 @@ void PorkRoll() {
   sendBeacon("_DIRTY DIAPER");
   sendBeacon("_IT'S CRAPTASTIC!");
   sendBeacon("_I FEEL NAUGHTY");
+  sendBeacon("_MIND CONTROL");
   sendBeacon("_IT HURTS WHEN I PEE");
   sendBeacon("_IM UNDER YOUR BED");
   sendBeacon("_FBI SURVEILLANCE VAN 69");
