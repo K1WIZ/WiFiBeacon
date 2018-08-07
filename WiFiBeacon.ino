@@ -14,7 +14,7 @@ void setup() {
 
 void loop() {
   //sendRandomBeacon(10); //sends beacon frames with 10 character long random SSID
-  //sendFuzzedBeacon("test",10); //sends beacon frames with 10 different SSID all starting with 'test' and ending with whitespaces (spaces and/or tabs)
+  //sendFuzzedBeacon("BOMB DETONATOR",10); //sends beacon frames with 10 different SSID all starting with 'BOMB DETONATOR' and ending with whitespaces (spaces and/or tabs)
   PorkRoll();
 }
 
