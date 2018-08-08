@@ -4,18 +4,36 @@ extern "C" {
   #include "user_interface.h"
 }
 
+const int switchPin = 13;   // bring LOW to switch
+int pinState = LOW;
+
 void setup() {
   delay(10000);
   wifi_set_opmode(STATION_MODE);
   wifi_promiscuous_enable(1); 
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(switchPin, INPUT);
+  digitalWrite(switchPin, HIGH);
 }
 
 
 
 void loop() {
+  pinState = digitalRead(switchPin);
+  digitalWrite(LED_BUILTIN, HIGH);
+  switch (pinState) {
+    case LOW:
+      sendFuzzedBeacon("BOMB DETONATOR",10); //sends beacon frames with 10 different SSID all starting with 'BOMB DETONATOR' and ending with whitespaces (spaces and/or tabs)
+      break;
+    case HIGH:
+      PorkRoll();
+      break;
+    } 
+  
   //sendRandomBeacon(10); //sends beacon frames with 10 character long random SSID
-  //sendFuzzedBeacon("BOMB DETONATOR",10); //sends beacon frames with 10 different SSID all starting with 'BOMB DETONATOR' and ending with whitespaces (spaces and/or tabs)
-  PorkRoll();
+ 
+  digitalWrite(LED_BUILTIN, LOW);   // Flash the LED once after every transmit
+  delay(1);  
 }
 
 void sendFuzzedBeacon(char* baseSsid, int nr) {
@@ -109,7 +127,6 @@ void PorkRoll() {
   sendBeacon("_Untrusted Network");
   sendBeacon("_BOMB DETONATOR");     //    COMMENT OR REMOVE THIS ONE IF USING NEAR AIRPORTS!  DON'T BE A DICKHEAD!
   sendBeacon("_DEA UNIT 9");
-  sendBeacon("_VOYAGER 2");
   sendBeacon("_STARSHIP ENTERPRISE");
   sendBeacon("_DIRTY OLD MAN");
   sendBeacon("_ENCRYPTED FOR YOUR PLEASURE");
