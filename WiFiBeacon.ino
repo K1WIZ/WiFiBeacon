@@ -5,10 +5,10 @@ extern "C" {
 }
 
 const int switchPin = 13;   // bring D7 pin LOW or HIGH to switch broadcast mode  LOW: 0V  HIGH: 3.3V
-int pinState = LOW;
+int pinState = HIGH;
 
 void setup() {
-  delay(10000);
+  delay(10000);  // Delay initial startup to allow for easy flashing
   wifi_set_opmode(STATION_MODE);
   wifi_promiscuous_enable(1); 
   pinMode(LED_BUILTIN, OUTPUT);
