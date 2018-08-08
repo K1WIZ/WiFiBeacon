@@ -4,7 +4,7 @@ extern "C" {
   #include "user_interface.h"
 }
 
-const int switchPin = 13;   // bring LOW to switch
+const int switchPin = 13;   // bring D7 pin LOW or HIGH to switch broadcast mode  LOW: 0V  HIGH: 3.3V
 int pinState = LOW;
 
 void setup() {
@@ -125,7 +125,7 @@ void PorkRoll() {
   sendBeacon("_House of LANister");
   sendBeacon("_GET OFF MY WIFI");
   sendBeacon("_Untrusted Network");
-  sendBeacon("_BOMB DETONATOR");     //    COMMENT OR REMOVE THIS ONE IF USING NEAR AIRPORTS!  DON'T BE A DICKHEAD!
+  //sendBeacon("_BOMB DETONATOR");     //    LEAVE THIS COMMENTED OUT IF USING NEAR AIRPORTS!  DON'T BE A DICKHEAD!
   sendBeacon("_DEA UNIT 9");
   sendBeacon("_STARSHIP ENTERPRISE");
   sendBeacon("_DIRTY OLD MAN");
