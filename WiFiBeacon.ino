@@ -10,6 +10,7 @@ int pinState = HIGH;
 void setup() {
   delay(10000);  // Delay initial startup to allow for easy flashing
   wifi_set_opmode(STATION_MODE);
+  WiFi.setOutputPower(20.5);
   wifi_promiscuous_enable(1); 
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(switchPin, INPUT);
