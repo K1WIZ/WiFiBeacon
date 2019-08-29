@@ -132,7 +132,6 @@ void PorkRoll() {
   sendBeacon("_ENCRYPTED FOR YOUR PLEASURE");
   sendBeacon("_HOMELAND SECURITY");
   sendBeacon("_FAST N FREE");
-  sendBeacon("_USED CONDOM");
   sendBeacon("_DIRTY DIAPER");
   sendBeacon("_IT'S CRAPTASTIC!");
   sendBeacon("_I FEEL NAUGHTY");
