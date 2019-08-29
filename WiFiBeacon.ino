@@ -23,7 +23,7 @@ void loop() {
   digitalWrite(LED_BUILTIN, HIGH);
   switch (pinState) {
     case LOW:
-      sendFuzzedBeacon("BOMB DETONATOR",10); //sends beacon frames with 10 different SSID all starting with 'BOMB DETONATOR' and ending with whitespaces (spaces and/or tabs)
+      sendFuzzedBeacon("Boo Yeah!",10); //sends beacon frames with 10 different SSID all starting with 'BOMB DETONATOR' and ending with whitespaces (spaces and/or tabs)
       break;
     case HIGH:
       PorkRoll();
