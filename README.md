@@ -9,3 +9,4 @@ A fun and cheap nuisance WiFi Beacon using ESP8266
 ## DON'T (Be a Dickhead!)
 * use irresponsible names anywhere that could fall into the category of suspected terrorism!
 * use in places like airports and stadiums - severe penalties could result
+* use in schools or classrooms
