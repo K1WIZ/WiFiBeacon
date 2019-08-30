@@ -1,3 +1,17 @@
+/*
+ * WiFi Beacon prank 
+ * 
+ * This project simply creates standard beacon frames and broadcasts them over the air.
+ * Clients will not be able to connect to these but will see them when browsing for wifi.
+ * PLEASE be responsible and think about how/where you use this.  Don't be a dickhead.
+ * 
+ * Permission is granted for free use and distribution as long as this notice is intact.
+ * 
+ * Written By: John Rogers   john at wizworks dot net   http://wizworks.net
+ * 
+ */
+ 
+
 #include <ESP8266WiFi.h> //more about beacon frames https://mrncciew.com/2014/10/08/802-11-mgmt-beacon-frame/
 
 extern "C" {
