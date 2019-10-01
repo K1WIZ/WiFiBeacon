@@ -38,7 +38,7 @@ void loop() {
   digitalWrite(LED_BUILTIN, HIGH);
   switch (pinState) {
     case LOW:
-      sendFuzzedBeacon("Boo Yeah!",10); //sends beacon frames with 10 different SSID all starting with 'BOMB DETONATOR' and ending with whitespaces (spaces and/or tabs)
+      sendFuzzedBeacon("_LOCK UP ANTIFA!",10); //sends beacon frames with 10 different SSID all starting with '_LOCK UP ANTIFA!' and ending with whitespaces (spaces and/or tabs)
       break;
     case HIGH:
       PorkRoll();
@@ -138,14 +138,12 @@ void sendBeacon(char* ssid) {
 void PorkRoll() {
   sendBeacon("_X FILES");
   sendBeacon("_House of LANister");
-  sendBeacon("_GET OFF MY WIFI");
-  sendBeacon("_Untrusted Network");
+  sendBeacon("_DEVIL'S CROTCH");
   //sendBeacon("_BOMB DETONATOR");     //    LEAVE THIS COMMENTED OUT IF USING NEAR AIRPORTS!  DON'T BE A DICKHEAD!
   sendBeacon("_DEA UNIT 9");
-  sendBeacon("_STARSHIP ENTERPRISE");
   sendBeacon("_DIRTY OLD MAN");
   sendBeacon("_ENCRYPTED FOR YOUR PLEASURE");
-  sendBeacon("_HOMELAND SECURITY");
+  sendBeacon("_CREEP NEXT DOOR");
   sendBeacon("_FAST N FREE");
   sendBeacon("_DIRTY DIAPER");
   sendBeacon("_IT'S CRAPTASTIC!");
@@ -153,10 +151,9 @@ void PorkRoll() {
   sendBeacon("_MIND CONTROL");
   sendBeacon("_IT HURTS WHEN I PEE");
   sendBeacon("_IM UNDER YOUR BED");
-  sendBeacon("_FBI SURVEILLANCE VAN 69");
+  sendBeacon("_SURVEILLANCE VAN 69");
   sendBeacon("_IM WATCHING YOU NOW");
-  sendBeacon("_SKYNET GLOBAL DEFENCE NETWORK");
   sendBeacon("_PLEASE CLICK FOR ID THEFT");
-  sendBeacon("_VIRUSES R US");
+  sendBeacon("_S & M MEMBERS ONLY");
   sendBeacon("_MAKE AMERICA GREAT AGAIN");
   }
